@@ -1,5 +1,5 @@
 .animal {
-  flex: 1 1 200px;
+  flex: 1 1 250px;
   display: flex;
   flex-direction: row;
   align-items: center;
