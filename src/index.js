@@ -3,7 +3,11 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-const animals = [{ name: "John" }, { name: "George" }, { name: "Fred" }];
+const animals = [
+  { name: "John", image: "images/john.jpg" },
+  { name: "George", image: "images/george.png" },
+  { name: "Fred", image: "images/fred.jpg" },
+];
 
 ReactDOM.render(
   <React.StrictMode>

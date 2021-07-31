@@ -25,7 +25,13 @@ export default function Animal(props) {
       style={{ backgroundColor: color }}
       onClick={handleClick}
     >
-      {props.name}
+      <div className="animal-image">
+        <img src={props.image} alt={props.name} />
+      </div>
+      <div className="animal-details">
+        <div className="animal-name">{props.name}</div>
+        <div className="animal-color">{color}</div>
+      </div>
     </div>
   );
 }

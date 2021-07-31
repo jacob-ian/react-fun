@@ -4,7 +4,7 @@ import Header from "./components/Header";
 
 function App(props) {
   const animals = props.animals.map((animal, i) => (
-    <Animal key={i} name={animal.name}></Animal>
+    <Animal key={i} name={animal.name} image={animal.image}></Animal>
   ));
 
   return (

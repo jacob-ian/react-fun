@@ -1,9 +1,9 @@
 .animal {
   flex: 1 1 200px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   font-size: 1.5rem;
   font-weight: bold;
   width: 100%;
@@ -14,4 +14,31 @@
        -moz-user-select: none; 
         -ms-user-select: none; 
             user-select: none;
+}
+
+.animal-image {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 25px;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+  .animal-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+
+.animal-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.animal-color {  
+  font-weight: normal;
+  font-size: 1rem;
 }
