@@ -27,7 +27,8 @@ export default function Animal(props) {
       </div>
       <div className="animal-details">
         <div className="animal-name">{props.name}</div>
-        <Button value={"Color: " + color} onClick={handleClick}></Button>
+        <div className="animal-color">{color}</div>
+        <Button value="Change Color" onClick={handleClick}></Button>
       </div>
     </div>
   );
