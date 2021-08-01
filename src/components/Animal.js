@@ -1,5 +1,6 @@
 import "./Animal.css";
 import { useState } from "react";
+import Button from "./Button";
 
 export default function Animal(props) {
   const [color, setColor] = useState(getRandomColor());
@@ -20,17 +21,13 @@ export default function Animal(props) {
   }
 
   return (
-    <div
-      className="animal"
-      style={{ backgroundColor: color }}
-      onClick={handleClick}
-    >
+    <div className="animal" style={{ backgroundColor: color }}>
       <div className="animal-image">
         <img src={props.image} alt={props.name} />
       </div>
       <div className="animal-details">
         <div className="animal-name">{props.name}</div>
-        <div className="animal-color">{color}</div>
+        <Button value={"Color: " + color} onClick={handleClick}></Button>
       </div>
     </div>
   );
